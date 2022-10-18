@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+a{
+    text-decoration: none;
+    letter-spacing: normal;
+    color: black;
+}
+section h3{
+    font-size: 1.15em;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+p{
+    font-size: 0.8em;
+}
+/* header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+    background-color: white;
+    position: fixed;
+    box-shadow: 2px 2px 2px #818080;
+}
+h1{
+    font-weight: 400;
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a, h1{
+    font-size: 0.9em;
+    letter-spacing: 2.5px;
+}
+h1, nav ul li a{
+    padding: 10px 10px 10px 10px;
+}
+h1:hover, nav ul li a:hover {
+    background-color: #F6F6F6;
+}
+/* section 1 */
+.boite1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 730px;
+    background-image: url('../IMG/architect.jpg');
+    background-size: cover;
+    background-position: center;
+}
+h2 {
+    font-size: 2.32em;
+    font-weight: lighter;
+    color: white;
+    margin-top: 20px;
+}
+h2 span {
+    padding: 8px 20px 8px 20px;
+    background-color: #383A3C;
+}
+/* section 2 */
+.boite2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boite2 section, .boite3 section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.boite2 section aside, .equipe {
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    height: 240px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+aside h5 a {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.block1 {
+    background-image: url(../IMG/house5.jpg);
+    background-size: cover;
+}
+.block2 {
+    background-image: url(../IMG/house2.jpg);
+    background-size: cover;
+}
+.block3 {
+    background-image: url(../IMG/house3.jpg);
+    background-size: cover;
+}
+.block4 {
+    background-image: url(../IMG/house4.jpg);
+    background-size: cover;
+}
+/* boite 3 */
+.equipe{
+    margin-top: 48px;
+    height: auto;
+    align-items: flex-start;
+    padding: 0px;
+}
+.equipe section {
+    margin-bottom: 10px;
+    height: 200px;
+}
+.equipe h5 {
+    font-size: 1.4em;
+    font-weight: lighter;
+    color: #545454;
+}
+.equipe span{
+    color: #545454;
+    font-size: 0.9em;
+}
+.team1 {
+    background-image: url(../IMG/team2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.team2 {
+    background-image: url(../IMG/team1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.team3 {
+    background-image: url(../IMG/team3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.team4 {
+    background-image: url(../IMG/team4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.equipe span {
+    margin: 15px 0px 15px 0px;
+}
+.equipe button {
+    margin-top: 10px;
+    width: 100%;
+    height: 38px;
+    border: none;
+}
+/* boite4 */
+.boite4 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boite4 p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.boite4 input {
+    color: black;
+    margin-bottom: 18px;
+    padding: 10px;
+}
+.button{
+    color: white;
+    border: none;
+}
+.boite4 section {
+    width: auto;
+    height: 600px;
+    background-image: url(../IMG/map.jpg);
+    background-position: center;
+}
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    nav ul li a, h1{
+        font-size: 0.5em;
+        letter-spacing: 1.7px;
+    }
+    .boite1{
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+    .boite2 section aside, .equipe {
+        display: flex;
+        width: 100%;
+        height: 240px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .equipe{
+        height: auto;
+    }
+    .boite4 section {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1220px){
+    *{
+        background-size: cover;
+        background-position: center;
+    }
+    .boite2 section aside, .equipe {
+        display: flex;
+        width: 49%;
+        height: 300px;
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .equipe section {
+        height: 300px;
+    }
+    .equipe{
+        height: auto;
+    }
+}
